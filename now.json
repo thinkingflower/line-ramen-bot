@@ -1,0 +1,17 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "webhook/index.js", "use": "@now/node" ,"config": {"maxLambdaSize": "15mb"}}
+    ],
+    "regions": ["hnd1"],
+    "env": {
+      "LINE_CHANNEL_TOKEN": "@line-token", 
+      "LINE_CHANNEL_SECRET": "@line-secret",
+      "PROJECT_ID": "@project-id",
+      "PRIVATE_KEY_ID": "@privatekey-id",
+      "PRIVATE_KEY": "@privatekey",
+      "CLIENT_EMAIL": "@client-email",
+      "CLIENT_ID": "@client-id",
+      "CLIENT_CERT": "@client-cert"
+    }
+}
